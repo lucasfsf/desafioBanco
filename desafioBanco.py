@@ -29,10 +29,10 @@ class Conta:
     def deposito(self):
         valor = float(input("Informe o valor do depósito: "))
         if valor > 0:
-                self.saldo += valor
-                self.extrato += f"Depósito: R$ {valor:.2f}\n"
+            self.saldo += valor
+            self.extrato += f"Depósito: R$ {valor:.2f}\n"
         else:
-                print("Operação falhou! O valor informado é inválido.")
+            print("Operação falhou! O valor informado é inválido.")
 
     def saque(self, limite_saques = 3):
         valor = float(input("Informe o valor do saque: "))
@@ -72,7 +72,7 @@ def main():
     while True:
         opcao = input(conta.menu)
         if opcao == "q":
-                break
+            break
         else: 
              conta.operacao(opcao)
 
